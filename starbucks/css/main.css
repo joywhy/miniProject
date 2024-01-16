@@ -1,6 +1,83 @@
-/* 메인 */
+/* COMMON */
+body {
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+img {
+    display: block;
+}
+a {
+    text-decoration: none;
+}
 
-* {
-    font-size : 40px;
-    color: red;
+/* header */
+header{
+ /* background-color:  royalblue; */
+ border: 1px solid red;
+}
+header .inner{
+    position: relative;
+    width: 1100px;
+    height: 120px;
+    margin: 0 auto;
+    /* background-color: orange; */
+    border: 1px solid gray;
+}
+header .logo{
+   position: absolute;
+    height: 75px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display:none;
+}
+header .sub-menu {
+
+}
+header .sub-menu ul.menu{
+ display: flex;
+ font-family: Arial, Helvetica, sans-serif;
+}
+header .sub-menu ul.menu li {
+position: relative;
+}
+header .sub-menu ul.menu li::before{
+    content: "";
+    /* before 는 기존 인라인요소 */
+    display: block;
+    width: 1px;
+    height: 12px;
+    background-color:#e5e5e5;
+    position: absolute;
+    /*   position: absolute /fixed 를 입력하면 자동으로 
+    display 값이 block으로 변환된다.*/
+    top:0;
+    bottom: 0;
+    margin: auto;
+}
+header .sub-menu ul.menu li:first-child::before{
+display: none;
+}
+header .sub-menu ul.menu li a {
+    display: block;
+    /* background-color: wheat; */
+    font-size: 12px;
+    padding: 11px 16px;
+    color: #656565;
+
+}
+header .sub-menu ul.menu li a:hover{
+    color:#000;
+}
+header .sub-menu  .search {
+
+}
+header .sub-menu  .search input {
+    
+}
+header .sub-menu  .search .material-symbols-outlined {
+    
 }

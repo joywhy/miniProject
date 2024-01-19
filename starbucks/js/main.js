@@ -26,7 +26,7 @@ window.addEventListener(
     // badgeEl.style.display = window.scrollY > 500 ? 'none' : 'block';
 
     if (window.scrollY > 500) {
-      // gsap.to(요소,지속시간,옵션)
+      // gsap.to(요소,지속시간-초단위,옵션)
       gsap.to(badgeEl, 0.6, {
         opacity: 0,
         display: 'none',
@@ -40,3 +40,12 @@ window.addEventListener(
     }
   }, 300)
 );
+
+const fadeEls = document.querySelectorAll('.visual .fade-in');
+
+fadeEls.forEach((fadeEl, index) => {
+  gsap.to(fadeEl, 1, {
+    delay: (index + 1) * 0.7, //0.7초 1.4초 2.1초
+    opacity: 1,
+  });
+});

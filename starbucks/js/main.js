@@ -49,3 +49,44 @@ fadeEls.forEach((fadeEl, index) => {
     opacity: 1,
   });
 });
+
+new Swiper('.notice-line .swiper-container', {
+  direction: 'vertical',
+  autoplay: true,
+  loop: true,
+});
+
+new Swiper('.promotion .swiper-container', {
+  direction: 'horizontal', //
+  slidesPerView: 3, // 한번에 보여줄 슬라이드 개수
+  spaceBetween: 10, //슬라이드 사이 여백 10px
+  centeredSlides: true, // 1번 슬라이드가 가운데에 보이는 지
+  loop: true,
+  // autoplay: {
+  //   delay: 5000,
+  // },
+  pagination: {
+    el: '.promotion .swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    prevEl: '.promotion .swiper-prev',
+    nextEl: '.promotion .swiper-next',
+  },
+});
+
+const promotionEl = document.querySelector('.promotion');
+const promotionToggleBtn = document.querySelector('.toggle-promotion');
+
+let isHidePromotion = false;
+// 초깃값은 보여지고 있음
+
+promotionToggleBtn.addEventListener('click', () => {
+  isHidePromotion = !isHidePromotion;
+  if (isHidePromotion) {
+    //숨김 처리
+    promotionEl.classList.add('hide');
+  } else {
+    promotionEl.classList.remove('hide');
+  }
+});

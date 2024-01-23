@@ -90,3 +90,18 @@ promotionToggleBtn.addEventListener('click', () => {
     promotionEl.classList.remove('hide');
   }
 });
+function random(min, max) {
+  return parseFloat((Math.random() * (max - min) + min).toFixed(2));
+}
+function floatingObject(selector, delay, size) {
+  gsap.to(selector, random(1.5, 2.5), {
+    y: size,
+    repeat: -1, //무한 반복
+    yoyo: true, //요요처럼
+    ease: Power1.easeInOut,
+    delay: random(0, delay),
+  });
+}
+floatingObject('.floating1', 1, 15);
+floatingObject('.floating2', 0.5, 15);
+floatingObject('.floating3', 1.5, 20);

@@ -593,11 +593,6 @@ header .badges .badge {
   top: 350px;
   left: 150px;
 }
-.youtube .floating3 {
-  position: absolute;
-  bottom: -200px;
-  right: 0;
-}
 
 /* season product */
 .season-product {
@@ -605,6 +600,11 @@ header .badges .badge {
 }
 .season-product .inner {
   height: 400px;
+}
+.season-product .floating3 {
+  position: absolute;
+  top: -200px;
+  right: 0;
 }
 .season-product .text-group {
   position: absolute;
@@ -618,4 +618,28 @@ header .badges .badge {
   margin-bottom: 15px;
 }
 .season-product .text-group .more {
+}
+
+/* reserve coffee */
+.reserve-coffee {
+  background-image: url('../images/reserve_bg.jpg');
+  /* 반복 출력이 default */
+}
+.reserve-coffee .inner {
+  height: 400px;
+}
+.reserve-coffee .reserve-logo {
+  position: absolute;
+  top: 110px;
+  left: 0;
+}
+.reserve-coffee .text-group {
+  position: absolute;
+  top: 124px;
+  left: 208px;
+}
+.reserve-coffee .product {
+  position: absolute;
+  top: 0;
+  right: 0;
 }

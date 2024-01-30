@@ -3,6 +3,9 @@
 
 클래스 컴포넌트와 함수 컴포넌트를 작성및 변환하며 공부했습니다. 
 
+<img width="370" alt="image" src="https://github.com/joywhy/miniProject/assets/82435813/c89ecabe-fadc-421e-b6ab-42a0d879d809">
+
+
 # 스타벅스 렌딩 페이지
 ### 바닐라 자바스크립트 프로젝트
 

@@ -11,6 +11,8 @@
 
  swiper, gsap,등의 라이브러리의 사용법을 익혔고, 유튜브 영상,트위터 카드, 구글 폰트 등을 적용했습니다. 
 
+<img width="1439" alt="image" src="https://github.com/joywhy/miniProject/assets/82435813/50e738da-1c8f-42e2-bf7b-2a3b1ca96504">
+
 # javaScriptPractice
 
 바닐라 자바스크립트 직접 실습하며 이해하는 시간을 가집니다. 

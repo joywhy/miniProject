@@ -16,5 +16,8 @@
 # javaScriptPractice
 
 바닐라 자바스크립트 직접 실습하며 이해하는 시간을 가집니다. 
+- 레이블 문 등
+
+<img width="405" alt="image" src="https://github.com/joywhy/miniProject/assets/82435813/32e9d4a1-f6d5-4b57-8e9a-a0086ea59fc4">
 
  

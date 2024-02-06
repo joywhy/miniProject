@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Square from './Square';
-import Controller from './Controller';
+import Controller from './Controller.js';
 import './Board.css';
 const Board = () => {
   const [squares, setSquares] = useState(Array(9).fill(null));

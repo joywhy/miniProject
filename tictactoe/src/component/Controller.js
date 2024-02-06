@@ -1,7 +1,6 @@
 import React from 'react';
 
-const Controller = ({ xisNext }) => {
-  const status = `Next Player : ${xisNext ? 'x' : '0'}`;
+const Controller = ({ status }) => {
   return (
     <div>
       <h2>{status}</h2>

@@ -1,31 +1,32 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import Square from './Square';
-import './Board.css';
-export default class Board extends Component {
-  renderSqure(i) {
-    return <Square value={i} />;
-  }
 
-  render() {
-    return (
-      <div>
-        <div className="status">Next Player: X,O</div>
-        <div className="board-row">
-          {this.renderSqure(0)}
-          {this.renderSqure(1)}
-          {this.renderSqure(2)}
-        </div>
-        <div className="board-row">
-          {this.renderSqure(3)}
-          {this.renderSqure(4)}
-          {this.renderSqure(5)}
-        </div>
-        <div className="board-row">
-          {this.renderSqure(6)}
-          {this.renderSqure(7)}
-          {this.renderSqure(8)}
-        </div>
+import './Board.css';
+const Board = ({ onClick, squares }) => {
+  const renderSqure = (i) => {
+    return <Square value={squares[i]} onClick={() => onClick(i)} />;
+  };
+
+  return (
+    <div>
+      <h1 className="status">Tic Tac Toe</h1>
+      <div className="board-row">
+        {renderSqure(0)}
+        {renderSqure(1)}
+        {renderSqure(2)}
       </div>
-    );
-  }
-}
+      <div className="board-row">
+        {renderSqure(3)}
+        {renderSqure(4)}
+        {renderSqure(5)}
+      </div>
+      <div className="board-row">
+        {renderSqure(6)}
+        {renderSqure(7)}
+        {renderSqure(8)}
+      </div>
+    </div>
+  );
+};
+
+export default Board;

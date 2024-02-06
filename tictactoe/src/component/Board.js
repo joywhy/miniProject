@@ -18,7 +18,7 @@ const Board = () => {
   };
 
   const calculateWinner = (squares) => {
-    console.log(squares);
+    // console.log(squares);
     const winningConditions = [
       [0, 1, 2],
       [3, 4, 5],
@@ -36,11 +36,11 @@ const Board = () => {
         squares[a] === squares[b] &&
         squares[a] === squares[c]
       ) {
-        console.log('winner!' + squares[a]);
+        // console.log('winner!' + squares[a]);
         return squares[a];
       }
     }
-    console.log('not yet');
+    // console.log('not yet');
     return null;
   };
   const winner = calculateWinner(squares);
@@ -54,7 +54,6 @@ const Board = () => {
 
   return (
     <div>
-      {/* {console.log(winner)} */}
       <h1 className="status">Tic Tac Toe</h1>
       <div className="board-row">
         {renderSqure(0)}

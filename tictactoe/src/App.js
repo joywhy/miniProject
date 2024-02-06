@@ -5,15 +5,21 @@ import { useState } from 'react';
 function App() {
   const [history, setHistory] = useState([{ squares: Array(9).fill(null) }]);
   const [xisNext, setXisNext] = useState(true);
-  const currentSquares = history[history.length - 1].squares;
 
+  const [stepNumber, setStepNumber] = useState(0);
+  const currentSquares = history[stepNumber].squares;
   const handleClick = (i) => {
-    if (winner || currentSquares[i]) return;
+    const newHistory = history.slice(0, stepNumber + 1);
+    const newCurrent = newHistory[newHistory.length - 1];
+    const newSquares = newCurrent.squares.slice();
 
-    const newSquares = currentSquares.slice();
+    if (winner || currentSquares[i]) return;
+    // history 그만큼 삭제한 복사본
+
     newSquares[i] = xisNext ? 'X' : 'O';
-    setHistory([...history, { squares: newSquares }]);
+    setHistory([...newHistory, { squares: newSquares }]);
     setXisNext(!xisNext);
+    setStepNumber(newHistory.length);
   };
 
   const calculateWinner = (squares) => {
@@ -52,7 +58,12 @@ function App() {
   return (
     <div className="app">
       <Board onClick={(i) => handleClick(i)} squares={currentSquares} />
-      <Controller status={status} />
+      <Controller
+        status={status}
+        history={history}
+        setXisNext={setXisNext}
+        setStepNumber={setStepNumber}
+      />
     </div>
   );
 }

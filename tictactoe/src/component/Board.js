@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 import Square from './Square';
+import Controller from './Controller';
 import './Board.css';
-const Board = ({ player, setPlayer }) => {
+const Board = () => {
   const [squares, setSquares] = useState(Array(9).fill(null));
+  const [xisNext, setXisNext] = useState(true);
+
   const handleClick = (i) => {
     const newSquares = squares.slice();
-    newSquares[i] = player;
+    newSquares[i] = xisNext ? 'X' : '0';
     setSquares(newSquares);
-    setPlayer();
+    setXisNext(!xisNext);
   };
   const renderSqure = (i) => {
     return <Square value={squares[i]} onClick={() => handleClick(i)} />;
@@ -31,6 +34,7 @@ const Board = ({ player, setPlayer }) => {
         {renderSqure(7)}
         {renderSqure(8)}
       </div>
+      <Controller xisNext={xisNext} />
     </div>
   );
 };

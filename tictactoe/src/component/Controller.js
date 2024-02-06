@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Controller = ({ player }) => {
-  const status = `Next Player : ${player}`;
+const Controller = ({ xisNext }) => {
+  const status = `Next Player : ${xisNext ? 'x' : '0'}`;
   return (
     <div>
       <h2>{status}</h2>

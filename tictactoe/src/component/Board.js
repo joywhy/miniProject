@@ -7,6 +7,8 @@ const Board = () => {
   const [xisNext, setXisNext] = useState(true);
 
   const handleClick = (i) => {
+    if (winner || squares[i]) return;
+
     const newSquares = squares.slice();
     newSquares[i] = xisNext ? 'X' : 'O';
     setSquares(newSquares);

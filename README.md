@@ -4,6 +4,9 @@
 클래스 컴포넌트와 함수 컴포넌트를 작성및 변환하며 공부했습니다. 
 
 <img width="456" alt="image" src="https://github.com/joywhy/miniProject/assets/82435813/4ff73f06-0ea0-44d1-a555-48ba92b9b475">
+
+<br/>
+
 - 게임중 이미 표시된 영역은 다시 누르지 못하도록 하고 승자가 생겼을때 누르지 못하도록하는 방식을 객체를 특정 조건에 얼리는 것이 아닌 handleClick 내부에 조건문을 걸어     if (winner || currentSquares[i]) return; 로 적용되지 못하고 바로 탈출하는 방식이 인상깊었습니다.
 - useState의 getter와 previousState의 차이를 알았습니다.
 - onClick 함수에 많은 일을 부여하지 않고 상태가 적절히 변경된 이후에 자동 계산되도록 설계하는 방식을 배웠습니다.

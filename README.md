@@ -3,7 +3,14 @@
 
 클래스 컴포넌트와 함수 컴포넌트를 작성및 변환하며 공부했습니다. 
 
-<img width="370" alt="image" src="https://github.com/joywhy/miniProject/assets/82435813/c89ecabe-fadc-421e-b6ab-42a0d879d809">
+<img width="456" alt="image" src="https://github.com/joywhy/miniProject/assets/82435813/4ff73f06-0ea0-44d1-a555-48ba92b9b475">
+
+- useState의 getter와 previousState의 차이를 알았습니다.
+- onClick 함수에 많은 일을 부여하지 않고 상태가 적절히 변경된 이후에 자동 계산되도록 설계하는 방식을 배웠습니다.
+- useState 값에 0 , x와 같은 직접 값이 들어가는 게 아닌 xisNext true false 를 지정해 순수한 목적을 지니도록 설계하는 방식을 배웠습니다.
+- 승자를 계산하는 방식: 승자조건의 변수를 만들고 반복문을 돌려 확인하는 방식을 이해했습니다.
+- 히스토리 상태를 만들어 이전 시점으로 돌아가는 동작을 설계했습니다.
+- 리액트의 key 값의 필요성을 이해했습니다.
 
 
 # 스타벅스 렌딩 페이지

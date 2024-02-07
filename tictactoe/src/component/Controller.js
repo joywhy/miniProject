@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './Controller.css';
 const Controller = ({ status, history, setStepNumber, setXisNext }) => {
   function jumpTo(i) {
     setStepNumber(i);
@@ -11,14 +11,16 @@ const Controller = ({ status, history, setStepNumber, setXisNext }) => {
     const desc = idx ? `go to move # ${idx}` : `go to game start!`;
     return (
       <li key={el + idx}>
-        <button onClick={() => jumpTo(idx)}>{desc}</button>
+        <button onClick={() => jumpTo(idx)} className="move-button">
+          {desc}
+        </button>
       </li>
     );
   });
   return (
     <div>
       <h2>{status}</h2>
-      <ol>{moves}</ol>
+      <ol style={{ listStyle: 'none' }}>{moves}</ol>
     </div>
   );
 };

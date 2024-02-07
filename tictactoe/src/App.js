@@ -56,13 +56,14 @@ function App() {
   }
 
   return (
-    <div className="app">
+    <div className="game">
       <Board onClick={(i) => handleClick(i)} squares={currentSquares} />
       <Controller
         status={status}
         history={history}
         setXisNext={setXisNext}
         setStepNumber={setStepNumber}
+        className="game-info"
       />
     </div>
   );

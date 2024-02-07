@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/joywhy/github.com/miniProject/static/css/main.325712e8.css",
-    "main.js": "/joywhy/github.com/miniProject/static/js/main.f874cf01.js",
-    "static/js/787.32b887b6.chunk.js": "/joywhy/github.com/miniProject/static/js/787.32b887b6.chunk.js",
-    "index.html": "/joywhy/github.com/miniProject/index.html",
-    "main.325712e8.css.map": "/joywhy/github.com/miniProject/static/css/main.325712e8.css.map",
-    "main.f874cf01.js.map": "/joywhy/github.com/miniProject/static/js/main.f874cf01.js.map",
-    "787.32b887b6.chunk.js.map": "/joywhy/github.com/miniProject/static/js/787.32b887b6.chunk.js.map"
+    "main.css": "/joywhy/github.com/miniProject/tictactoe/static/css/main.325712e8.css",
+    "main.js": "/joywhy/github.com/miniProject/tictactoe/static/js/main.b294424a.js",
+    "static/js/787.32b887b6.chunk.js": "/joywhy/github.com/miniProject/tictactoe/static/js/787.32b887b6.chunk.js",
+    "index.html": "/joywhy/github.com/miniProject/tictactoe/index.html",
+    "main.325712e8.css.map": "/joywhy/github.com/miniProject/tictactoe/static/css/main.325712e8.css.map",
+    "main.b294424a.js.map": "/joywhy/github.com/miniProject/tictactoe/static/js/main.b294424a.js.map",
+    "787.32b887b6.chunk.js.map": "/joywhy/github.com/miniProject/tictactoe/static/js/787.32b887b6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.325712e8.css",
-    "static/js/main.f874cf01.js"
+    "static/js/main.b294424a.js"
   ]
 }
